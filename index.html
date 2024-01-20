@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#E76F51',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-poppins">
+
+  <!-- HEADER SECTION -->
+
+  <header class="md:container md:mx-auto">
+    <nav class="my-[20px]">
+      <div class="container navbar bg-base-100 max-w-[1250px] mx-auto ">
+        <div class="navbar-start">
+          <a class="text-3xl font-poppins font-bold cursor-pointer">Go Ride</a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 gap-[20px] text-[17px]">
+              <li><a class="hover:bg-transparent hover:text-primary" href="#home">Home</a></li>
+              <li><a class="hover:bg-transparent hover:text-primary">Shop</a></li>
+              <li><a class="hover:bg-transparent hover:text-primary">News</a></li>
+              <li><a class="hover:bg-transparent hover:text-primary">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn text-white  bg-primary px-[50px] hidden lg:flex ml-[20px] hover:border-primary border-primary border-2 hover:bg-transparent hover:text-primary">Login</a>
+
+          <div class="dropdown items-end">
+            <div tabindex="0" role="button" class="lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 max-w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-5 z-[1] p-2 shadow bg-base-100 rounded-box w-[200px] items-center ml-[-200px]">
+              <li><a class="hover:bg-transparent hover:text-primary" href="#home">Home</a></li>
+              <li><a class="hover:bg-transparent hover:text-primary">Shop</a></li>
+              <li><a class="hover:bg-transparent hover:text-primary">News</a></li>
+              <li><a class="hover:bg-transparent hover:text-primary">Contact</a></li>
+              <a class="btn text-white  bg-primary px-[50px]  hover:border-primary border-primary border-2 hover:bg-transparent hover:text-primary">Login</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="md:container md:max-w-[1250px] md:mx-auto ml-[10px] mr-[10px]">
+      <div class="container carousel rounded-lg">
+        <div id="slide1" class="carousel-item relative w-full bg-[#E76F511A] lg:pt-[90px] lg:pb-[90px] p-0 items-center lg:h-auto h-[700px] rounded-lg">
+          <div class="lg:flex lg:justify-between lg:text-left lg:px-[100px] px-[20px] text-center items-center gap-32">
+            <div class="max-w-[450px]">
+              <h1 class="lg:text-[60px] text-[30px] font-bold">Ride-on R15 V4 with Smile</h1>
+              <p class="leading-7 text-[19px]">Amet minim mollit non deserunt ullamco
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <a class="btn text-white  bg-primary px-[50px] mt-6 hover:border-primary border-primary border-2 hover:bg-transparent hover:text-primary">Purchase</a>
+            </div>
+            <div class="flex">
+              <img class="w-[1000px] mt-[40px]" src="images/slider/bike3.png" alt="">
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full bg-[#E76F511A] lg:pt-[90px] lg:pb-[90px] p-0 items-center lg:h-auto h-[700px] rounded-lg">
+          <div class="lg:flex lg:justify-between lg:text-left lg:px-[100px] px-[20px] text-center items-center gap-32">
+            <div class="max-w-[450px]">
+              <h1 class="lg:text-[60px] text-[30px] font-bold">Ride-on R15 V4 with Smile</h1>
+              <p class="leading-7 text-[19px]">Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <a
+                class="btn text-white  bg-primary px-[50px] mt-6 hover:border-primary border-primary border-2 hover:bg-transparent hover:text-primary">Purchase</a>
+            </div>
+            <div class="flex">
+              <img class="w-[1000px] mt-[40px]" src="images/slider/bike3.png" alt="">
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full bg-[#E76F511A] lg:pt-[90px] lg:pb-[90px] p-0 items-center lg:h-auto h-[700px] rounded-lg">
+          <div class="lg:flex lg:justify-between lg:text-left lg:px-[100px] px-[20px] text-center items-center gap-32">
+            <div class="max-w-[450px]">
+              <h1 class="lg:text-[60px] text-[30px] font-bold">Ride-on R15 V4 with Smile</h1>
+              <p class="leading-7 text-[19px]">Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <a
+                class="btn text-white  bg-primary px-[50px] mt-6 hover:border-primary border-primary border-2 hover:bg-transparent hover:text-primary">Purchase</a>
+            </div>
+            <div class="flex">
+              <img class="w-[1000px] mt-[40px]" src="images/slider/bike3.png" alt="">
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full bg-[#E76F511A] lg:pt-[90px] lg:pb-[90px] p-0 items-center lg:h-auto h-[700px] rounded-lg">
+          <div class="lg:flex lg:justify-between lg:text-left lg:px-[100px] px-[20px] text-center items-center gap-32">
+            <div class="max-w-[450px]">
+              <h1 class="lg:text-[60px] text-[30px] font-bold">Ride-on R15 V4 with Smile</h1>
+              <p class="leading-7 text-[19px]">Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <a
+                class="btn text-white  bg-primary px-[50px] mt-6 hover:border-primary border-primary border-2 hover:bg-transparent hover:text-primary">Purchase</a>
+            </div>
+            <div class="flex">
+              <img class="w-[1000px] mt-[40px]" src="images/slider/bike3.png" alt="">
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+  </header>
+
+  
+</body>
+</html>
